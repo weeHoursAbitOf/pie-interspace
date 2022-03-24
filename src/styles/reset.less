@@ -1,0 +1,528 @@
+html,
+body {
+  background-image: url("../assets/public/background.png");
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+//滚动条
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  background-color: #777;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  background-color: rgba(95, 152, 255, 0.1);
+}
+
+//兼容火狐
+div {
+  scrollbar-width: thin;
+  scrollbar-color: #777 transparent;
+}
+
+//重新输入框背景色
+div::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(95, 152, 255, 0.1);
+  // border-radius: 4px;
+  background-color: rgba(95, 152, 255, 0.1);
+}
+
+div::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 5px rgba(95, 152, 255, 0.1);
+  background-color: #777;
+}
+
+div::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+  color: @left-menu-font-ac;
+  background: @menu-active;
+  z-index: 2;
+}
+
+.ivu-layout {
+  background-color: transparent;
+}
+
+.ivu-menu-light {
+  background: transparent;
+}
+
+.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item {
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: @left-menu-font;
+  padding-left: 60px !important;
+}
+
+.ivu-menu-vertical .ivu-menu-submenu-title {
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: @left-menu-font;
+}
+
+.ivu-menu-vertical .ivu-menu-submenu-title:hover {
+  color: @left-menu-font;
+}
+
+.ivu-menu-vertical.ivu-menu-light:after {
+  content: "";
+  background: transparent;
+}
+
+.ivu-menu-item-active:not {
+  color: #229b75;
+}
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu):after {
+  content: "";
+  background: @menu-active  !important;
+}
+
+.ivu-table {
+  max-width: 100% !important;
+  color: @table-text-color;
+  background-color: transparent;
+}
+
+.ivu-table th {
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: @table-th-bg;
+}
+
+.ivu-table table {
+  table-layout: fixed;
+  background-color: transparent;
+  max-width: 100% !important;
+}
+
+.ivu-table-header {
+  background-color: transparent;
+}
+
+.ivu-table-border td,
+.ivu-table-border th {
+  border-right: 1px solid @th-border-color;
+}
+
+.ivu-table td {
+  background-color: transparent;
+}
+
+.ivu-table td,
+.ivu-table th {
+  border-bottom: 0.005208rem solid @th-border-color;
+}
+
+.ivu-table:before {
+  content: "";
+  background-color: @th-border-color;
+}
+
+.ivu-table:after {
+  content: "";
+  background-color: @th-border-color;
+}
+
+.ivu-table-wrapper-with-border {
+  border: 0.005208rem solid @th-border-color;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+::-webkit-input-placeholder {
+  color: @input-placeholder-font-color;
+}
+
+.ivu-table-row-hover {
+  background: transparent;
+}
+
+//重写iview 下拉选择框、输入框提示语样式
+
+.ivu-input {
+  background: @input-bg-color;
+  border-color: #1d3870;
+  color: @menu-fontcolor;
+  height: 36px;
+}
+
+.ivu-select-single .ivu-select-selection {
+  background: @input-bg-color;
+  color: @menu-fontcolor;
+  border-color: @content-border-color;
+}
+
+.ivu-select-dropdown {
+  background-color: @input-bg-color;
+}
+
+.ivu-select-not-found {
+  color: #98dcff;
+  font-size: 14px;
+}
+
+.ivu-input::-webkit-input-placeholder {
+  color: @input-placeholder-font-color;
+}
+
+.ivu-input::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: @input-placeholder-font-color;
+}
+
+.ivu-input::-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: @input-placeholder-font-color;
+}
+
+.ivu-select-placeholder {
+  color: @input-placeholder-font-color;
+}
+
+.ivu-select-selection,
+.ivu-select-placeholder,
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder {
+  height: 0.15625rem;
+  line-height: 0.17625rem;
+  color: @input-placeholder-font-color;
+}
+
+.ivu-checkbox-inner {
+  border: 1px solid @checked-color;
+  background-color: transparent;
+}
+
+.ivu-checkbox-checked .ivu-checkbox-inner {
+  border-color: @checked-color-ac;
+  background-color: transparent;
+}
+
+.ivu-checkbox-inner:after {
+  border-color: @menu-fontcolor;
+}
+
+.ivu-checkbox-checked .ivu-checkbox-inner:after {
+  border-color: @checked-color;
+}
+
+//查看、更新按钮
+.ivu-btn-success {
+  color: rgb(0, 174, 255);
+  background-color: transparent;
+  border-style: none;
+}
+
+.ivu-btn-success:hover {
+  color: rgb(0, 174, 255);
+  background-color: transparent;
+  border-style: none;
+}
+
+//修改按钮
+.ivu-btn-default {
+  color: rgb(250, 182, 0);
+  background-color: transparent;
+  border-style: none;
+}
+
+.ivu-btn-default:hover {
+  color: rgb(250, 182, 0);
+  background-color: transparent;
+  border-style: none;
+}
+
+.ivu-btn-warning {
+  color: rgb(255, 0, 0);
+  background-color: transparent;
+  border-style: none;
+}
+
+.ivu-btn-warning:hover {
+  color: rgb(255, 0, 0);
+  background-color: transparent;
+  border-style: none;
+}
+
+//导出按钮
+.ivu-btn-info {
+  color: rgb(0, 156, 92);
+  border-style: none;
+}
+
+.ivu-btn-info:hover {
+  color: rgb(0, 156, 92);
+  background-color: transparent;
+  border-style: none;
+}
+
+//删除按钮
+.ivu-btn-error {
+  color: rgb(255, 0, 0);
+  background-color: transparent;
+  border-style: none;
+}
+
+.ivu-btn-error:hover {
+  color: rgb(255, 0, 0);
+  background-color: transparent;
+  border-style: none;
+}
+
+// .ivu-table-overflowY>::-webkit-scrollbar {
+//   width: 1px;
+//   background-color: rgba(0, 0, 0, 0.5);
+// }
+
+//日期选择器背景
+.ivu-picker-panel-body {
+  background-color: @select-btn-bg;
+  color: #fff;
+}
+
+//重写日历组件
+.ivu-date-picker-with-range .ivu-picker-panel-body {
+  background: @select-btn-bg;
+  color: #fff;
+}
+
+.ivu-date-picker-cells-cell:hover em {
+  background: transparent;
+  border: 1px solid red;
+}
+
+//下拉框背景颜色
+.ivu-select-dropdown {
+  background-color: @input-bg-color;
+}
+
+//下拉框选项颜色
+.ivu-select-item {
+  color: #98dcff;
+}
+
+//城市地区下拉框字体颜色
+.ivu-cascader .ivu-cascader-menu-item {
+  color: #98dcff;
+}
+
+//单选按钮样式
+.ivu-radio-inner {
+  background-color: #151e23;
+  border: 0.005208rem solid #c9e1ff;
+}
+
+//单选按钮样式
+.ivu-radio-inner {
+  width: 12px;
+  height: 12px;
+}
+
+//单选按钮样式
+.ivu-radio-inner:after {
+  width: 6px;
+  height: 6px;
+}
+
+//悬浮框背景
+.ivu-poptip-inner {
+  background-color: #09123e;
+  border: 1px solid #133172;
+  font-size: 16px;
+  color: #98dcff;
+}
+
+//悬浮框高度
+.ivu-poptip-confirm .ivu-poptip-body {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.ivu-poptip-confirm .ivu-poptip-footer {
+  text-align: right;
+  padding: 20px;
+}
+
+//悬浮框小箭头
+.ivu-poptip-popper[x-placement^="left"] .ivu-poptip-arrow:after {
+  border-left-color: #09123e;
+}
+
+//悬浮框确定按钮
+.ivu-btn-primary {
+  background-color: #03347a;
+  border: none;
+  color: #98dcff;
+}
+
+//悬浮框取消按钮
+.ivu-btn-text {
+  background-color: #08254b;
+  border-color: #133172;
+  color: #98dcff;
+}
+
+//全局提示
+.ivu-message-notice-with-background .ivu-message-notice-content-success,
+.ivu-message-notice-content {
+  background: @bg-color;
+  border-color: @border-color;
+  font-size: 14px;
+  color: @font-color;
+}
+
+.ivu-menu {
+  width: 250px !important;
+}
+
+//表格过滤条件样式
+.ivu-table-filter-list .ivu-table-filter-select-item {
+  color: #98dcff;
+}
+
+//表格展示完整信息面板颜色
+.ivu-tooltip-inner {
+  display: flex;
+  background-color: #09123e;
+  color: #98dcff;
+}
+
+//禁用input框颜色
+.ivu-input[disabled] {
+  background-color: #09123e;
+  color: #98dcff;
+}
+
+.ivu-input[disabled]:hover {
+  border-color: #57a3f3;
+}
+
+//多选下拉框样式
+.ivu-select-selection {
+  background: @input-bg-color;
+  color: @menu-fontcolor;
+  border-color: @content-border-color;
+  overflow: auto;
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    // /deep/.ivu-tag .ivu-tag-checked {
+    //   width: 30%;
+    // }
+  }
+}
+
+//多选下拉框样式
+.ivu-tag {
+  border: 0;
+  background: @input-bg-color;
+}
+
+//多选下拉框样式
+.ivu-tag-text {
+  font-size: @lable-font-size;
+  color: #c9e1ff;
+}
+
+//多选下拉框样式
+.ivu-icon-ios-close:before {
+  color: #fff;
+}
+
+//多选下拉框placeholder颜色
+.ivu-select-multiple .ivu-select-selection .ivu-select-placeholder {
+  color: #5581b7;
+}
+
+.ivu-select-item-focus {
+  background: none !important;
+}
+
+.ivu-select-item-selected {
+  background: #fff !important;
+}
+
+//多选下拉框hover颜色
+.ivu-select-selection:hover {
+  border-color: #57a3f3;
+}
+
+//多选下拉框省略样式
+.ivu-select-multiple .ivu-tag {
+  width: 40%;
+}
+
+// .ivu-select-dropdown{
+//   left:-70px !important;
+// }
+
+//重新输入框背景色
+.ivu-cascader-menu::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(95, 152, 255, 0.1);
+  border-radius: 4px;
+  background-color: rgba(95, 152, 255, 0.1);
+}
+
+.ivu-cascader-menu::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 5px rgba(95, 152, 255, 0.1);
+  background-color: #777;
+}
+
+.ivu-cascader-menu::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+//站内搜索
+.ivu-input-group-prepend {
+  border: 0.005208rem solid @content-border-color  !important;
+  background-color: @input-bg-color;
+  width: 110px;
+
+  /deep/ .ivu-select-selection {
+    border: none;
+  }
+}
+
+.ivu-notice-notice,
+.ivu-notice-notice-closable {
+  background-color: rgba(3, 53, 182, 0.8) !important;
+  border: 1px solid @content-border-color;
+
+  .ivu-notice-title {
+    color: @main-font-color;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}

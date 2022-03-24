@@ -1,0 +1,205 @@
+// 此处可以放置全局的less变量
+
+@import 'base.less';
+
+// 1、框架相关颜色值
+
+// 背景颜色
+//主体背景颜色
+// @global-bg: radial-gradient(ellipse farthest-side at 950px -40px, #030636 70%,#00020a 90%);
+// @global-bg: #1077f5;
+@global-bg: radial-gradient(ellipse 800px 1000px at 50% 0%, #0E3F82 10%, #030636 70%, #00020a 100%);
+
+//内容区域背景颜色 未采用
+@content-bg: rgba(95, 152, 255, .1);
+
+
+//主体边框颜色
+@global-border-color: #021b3a;
+
+
+//头部主标题大小
+@main-title-size: 24px;
+
+//主体字体大小
+@main-font-size: 14px;
+
+//主体字体颜色
+@main-font-color: #98dcff;
+
+//主体字体选中颜色
+@menu-selected: #c9e1ff;
+
+
+
+// 顶部导航tab页面相关色值
+//左侧导航-激活背景色
+@menu-active: #1d3457;
+@menu-font-color: #c9e1ff;
+
+@menu-item-bg: linear-gradient(-45deg, transparent 6px, #1d3457 0);
+@menu-item-bg-ac: linear-gradient(-45deg, transparent 6px, rgba(28, 95, 177, .9) 0);
+
+//菜单字体颜色
+@menu-fontcolor: #98dcff;
+@left-menu-fcolor: red;
+
+
+
+//左侧导航列表边框颜色
+@main-border-color: #042667;
+
+//内容右侧区域边框颜色
+@content-border-color: #1d3870;
+//左侧导航列表字体颜色
+@left-menu-font: #3d6699;
+//左侧导航列表选中字体颜色
+@left-menu-font-ac: #c9e1ff;
+
+
+
+
+//全局按钮相关
+//列表字体颜色
+@list-fontcolor: #98dcff;
+//常规按钮颜色
+@btn-bg-color: #1077f5;
+
+//搜索按钮框背景颜色 (日期选择器面板背景颜色)
+@select-btn-bg: #121E51;
+
+
+//搜索按钮边框背景颜色 
+@select-btn-border: 1px solid #0F3A4F;
+
+//搜索按钮字体颜色 
+@select-btn-fontcolor: 1px solid #0F3A4F;
+
+//删除按钮颜色
+@del-btn-bg: #C80000;
+
+//导出按钮颜色
+@export-btn-bg: #00AF63;
+@export-btn-color: #fff;
+
+
+@search-btn-bg: #0f3a4f;
+//新建按钮颜色
+@new-btn-bg: rgb(250, 182, 0);
+
+//按钮字体大小
+@btn-font-size: 14px;
+
+
+
+
+//输入框背景颜色
+// @input-bg-color: rgba(95, 152, 255, .1);
+@input-bg-color: #09123e;
+//输入框提示字体颜色(placeholder)
+@input-placeholder-font-color: #5581b7;
+
+
+
+
+
+// table表单样式
+@th-border-color: #1d3870;
+@table-text-color: #c9e1ff;
+@table-th-bg: rgba(95, 152, 255, .1);
+
+//表单内边距
+@table-padding: 20px;
+
+//表格顶部边距
+@table-top-space: 20px;
+
+//两个输入框的距离
+@table-input-space: 30px;
+
+//标题与输入框距离
+@table-lable-space: 30px;
+//button直接边距
+@table-btn-space: 30px;
+
+//输入框与搜索框边距
+@search-lable-space: 20px;
+
+//两个按钮的距离
+@table-button-space: 20px;
+
+//表单搜索 条件标题 lable字体
+@lable-font-size: 16px;
+@lable-font-color: #c9e1ff;
+
+// checked 默认颜色
+@checked-color: #6d9bef;
+
+// checked 选中颜色
+@checked-color-ac: #5f98ff;
+
+
+
+// 分页
+@page-border-color: #98dcff;
+@page-bg-color: #102857;
+@page-active-color: rgb(24, 144, 255);
+@page-font-color: #3d6699;
+@page-bg-color-ac: #3d6699;
+@page-font-color-ac: #c9e1ff;
+
+
+//模块列表通用样式
+
+//模板字体大小
+@template-font-size: 18px;
+//边框颜色
+@template-border-color: rgba(25, 56, 63, 1);
+@template-color: #fff; // 模板模块字体主题颜色
+
+
+//禁用状态内容区域颜色
+@not-allowed-bg: rgba(141, 184, 214, .2);
+
+//相关法规管理、公告公示管理border边框颜色
+@manage-border-color: #1d3870;
+
+/*
+人工处理弹出框
+产品受理情况、产品需求解释（鼠标移动盒子颜色、背景色、边框样式、字体颜色）
+*/
+@product-border-color: #57a3f3;
+@product-background: #09123e;
+@product-border: 1px solid #1d3870;
+@product-color: #c9e1ff;
+@product-title-color: #c9e1ff;
+
+// 人工处理按钮颜色
+@artificial-btn-color: rgb(0, 174, 255);
+
+//搜索边框颜色
+@search-border-color: #1d3970;
+
+//软件下载管理界面横线样式
+@software-line: 1px solid #2c5155;
+
+//人工处理弹出框样式
+@artificial-bottom: 20px; //间距
+@artificial-font-size: 16px; //字体大小
+@artificial-margin: 5px; //标题与文本框距离
+@artificial-title-width: 108px; //标题宽度
+@artificial-title-padding: 12px; //标题内边距
+@artificial-input-width: 270px; //文本框宽度
+@artificial-user-height: 103px; //用户需求描述高度
+@artificial-product-height: 300px; //产品需求解释高度
+
+//弹出框背景颜色
+@modals-bg-color: rgba(10, 13, 62, 0.85);
+
+//弹出框边框颜色
+@modals-border-color: rgba(3, 52, 122, 1);
+
+//全局提示
+@bg-color: #09123e;
+@font-color: #98dcff;
+@border-color: #133172;

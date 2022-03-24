@@ -1,0 +1,11 @@
+1.  功能描述： 空间项目前端
+2.  项目名称： 空间
+3.  申请人：马钊有
+4.  代码管理人：马钊有
+5.  开发语言：html+js+css
+6.  开发框架：vue+iview
+7.  自动化测试地址:http://172.16.40.22:8000/job/pie-interspace/
+8.  测试库：暂无
+9.  项目部署仓库地址：http://172.16.40.237:1180/harbor/projects/14/repositories/jenkins%2Fpie-interspace
+10.  项目发布地址：http://172.16.40.24:8007/#/organization
+网关发布地址：http://piecloud.piesat.cn/pie-interspace/#/organization
